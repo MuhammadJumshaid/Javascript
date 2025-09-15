@@ -1,0 +1,26 @@
+
+
+History of javascript
+
+1995 >> Netscape navigator >> a very popular web browser at that time
+Brendan Eich working fir betscape navigator made javascript only in 10 days, 
+firstly js name was moca , he changed it ot livescript, 
+a very popular language at that time when livescript arrived was java, then they changed the name of livescript to javascript to populate it
+Remember java and javascript are completely different languages
+internet explorer was also famous at that time, they think that due to javascript Netscape navigator is becoming famous, then they copy some features of javascript and then introduce a new language name jScript.
+Now microsoft has jScript and Netscape navigator jas javascript(1996),
+now at that time the problem was that if people use javascript, then their website will run on Netscape navigator and if they use jScript it will run on internet explorer(it also create problems for budgent to buy different browser for website)
+then thy take the javascript to Ecma(An international organization that standardize different technologies, that how a technology should behave )
+ES1 >> 1997 
+ES5 >>2009(Lots of new features in javascript)
+ES6 >>2015(Biggest updated in the history of js ), then js also know as modern js
+ES7 >> 2016
+ES8 >> 2017
+javascript has community known as Technical community 29(TC39), the people of this community will decided what new features will come in js or not (1 meeting in 2 month, 6 meeting in a year)
+This community decide that they will lanunch evey new annual 
+a new feature in javascript will be passed for four stages
+
+Note >> javascript is backword compatibal (mean a feature that is intruduced in javascript many years ago i.e 20 years ago will work today)
+javascript is not forward compatible(mean a new feature is intruduced in js and if a person is using an old version of browser this will now work in that browser(old browser))
+there is solution for this that some people used tools like bables and others tools to convert this code
+
