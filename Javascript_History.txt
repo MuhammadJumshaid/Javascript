@@ -24,3 +24,4 @@ Note >> javascript is backword compatibal (mean a feature that is intruduced in 
 javascript is not forward compatible(mean a new feature is intruduced in js and if a person is using an old version of browser this will now work in that browser(old browser))
 there is solution for this that some people used tools like bables and others tools to convert this code
 
+chck
