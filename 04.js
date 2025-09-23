@@ -13,3 +13,6 @@ let firstName = "Jumshaid"
  firstName = "Ali"
 
  console.log(firstName)
+
+
+ // Block scope vs function (diff b/w var and let)
