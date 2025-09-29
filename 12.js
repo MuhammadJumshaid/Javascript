@@ -1,8 +1,8 @@
 // 20250929 
 
-// Booleans and Comparison Operator 
+// Booleans and Comparison Operator (useds in if-else ....)
 
-// Booleans(True, False)
+// Booleans(True, False)  
 // comparison operator (==, != , && , || , < , > , <= , >= )
 
 // let a = 6;
