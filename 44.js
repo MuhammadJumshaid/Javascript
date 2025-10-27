@@ -130,8 +130,8 @@
 //   return  number%2 == 0
 // }
 
-// console.log(isEven(3)) // Faske 
-// console.log(isEven(2)) // Faske 
+// console.log(isEven(3)) // False 
+// console.log(isEven(2)) // True 
 
 
 
