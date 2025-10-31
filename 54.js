@@ -1,7 +1,12 @@
 // 20251030 
 
+ // Higher Order Function?? >> Function that returns a function or take a function as a parameter(callback function) are higher order function
+
+
 // Callback Functions 
 // Take a function as a parameter and call it >> this is callback function 
+
+
 
 
 // value of a can be a number 
