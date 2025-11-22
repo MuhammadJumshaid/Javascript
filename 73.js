@@ -1,8 +1,8 @@
 // 20251120 
 
 // Call , Apply and bind (methods)
-
-
+// These three are methods that let you manually set the value of this in a function.
+// They all help you borrow a function from one object and use it with another object.
 // function hello(){
 //     console.log("Hi, How are you!")
 // }
@@ -179,30 +179,48 @@
 
 
 
- function about(hobby, gender){
-        console.log(this.personName , this.personAge, hobby, gender)
-    }
+//  function about(hobby, gender){
+//         console.log(this.personName , this.personAge, hobby, gender)
+//     }
 
-const person1 = {
-    personName : "Jumshaid",
-    personAge : 12,
+// const person1 = {
+//     personName : "Jumshaid",
+//     personAge : 12,
    
+// }
+
+// const person2 = {
+//     personName : "Ali",
+//     personAge : 10,
+   
+// }
+
+
+
+// // about.bind(person2, ["Pubg" , "Male"])   // nothing in the output
+// // about.bind(person1, "abc" , "Male")  // nothing in the output
+
+
+// const result2 = about.bind(person2, ["Pubg" , "Male"])   // nothing in the output
+// const result1 =  about.bind(person1, "abc" , "Male")  // // nothing in the output
+
+// result2()  // Ali 10 (2) ['Pubg', 'Male']
+// result1()  // Jumshaid 12 abc Male
+
+
+
+
+
+
+
+function sayHi() {
+  console.log(`Hi, I am ${this.name}`);
 }
 
-const person2 = {
-    personName : "Ali",
-    personAge : 10,
-   
-}
+const user = { name: "Muhammad" };
 
+sayHi.call(user);   // Hi, I am Muhammad
+sayHi.apply(user);  // Hi, I am Muhammad
 
-
-// about.bind(person2, ["Pubg" , "Male"])   // nothing in the output
-// about.bind(person1, "abc" , "Male")  // nothing in the output
-
-
-const result2 = about.bind(person2, ["Pubg" , "Male"])   // nothing in the output
-const result1 =  about.bind(person1, "abc" , "Male")  // // nothing in the output
-
-result2()  // Ali 10 (2) ['Pubg', 'Male']
-result1()  // Jumshaid 12 abc Male
+const newFunc = sayHi.bind(user);
+newFunc();          // Hi, I am Muhammad
