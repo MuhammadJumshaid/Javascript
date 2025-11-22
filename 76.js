@@ -5,6 +5,8 @@
 
 
 
+// regular function(method)
+
 const user1 = {
    
     firsName :  'jumshaid',
