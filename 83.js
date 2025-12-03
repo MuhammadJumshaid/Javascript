@@ -19,6 +19,7 @@
 
 // create empty object(nameds this)  >> this = {}
 // return this
+// do the work of proto
 
 
 
