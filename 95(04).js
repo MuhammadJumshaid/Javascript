@@ -49,3 +49,12 @@ console.log(typeof firstName) // undefined
 // the time period b/w a variable becomes initaialized from uninitialize state is known as TDZ(Tempral Dead Zone)
 
 // var (uninitailized)---------------------- 
+
+
+
+// let firstName ;
+// const lastName  ;  // error 
+
+
+
+// variables createed with var , they will be undeifned in the memory , and variable created with let or const , will be uninitialized
