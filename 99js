@@ -1,0 +1,15 @@
+// 20260102 
+
+// Closures Example 1
+
+function hello(x){
+const  a = "var1";
+const b = "var2";
+return function(){
+    console.log(x, a, b)
+}
+}
+
+const ans = hello("Jimi");
+ans() // Jimi var1 var2
+
