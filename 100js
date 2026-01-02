@@ -1,0 +1,62 @@
+// 20260102
+
+// Task  >> create a function that will give result cube of a given number 
+
+// cube or square 
+
+// function Cube(Number){
+// return function(){
+//     console.log(Number * Number)
+// }
+// }
+
+// const result = Cube(6)
+// result()
+
+
+
+// Solution 
+
+// Square >> power = 2 
+// Cube >> power = 3
+
+// function myfun(power){
+// return function(number){
+//     return number ** power
+// }
+// }
+
+// const cube = myfun(2)
+// const ans = cube(3)
+
+// console.log(ans)
+
+// const square = myfun(3)
+// const ans2 = square(3)
+
+// console.log(ans2)
+
+
+
+// now with arrow function 
+
+// const myFun = (power) => {
+//     return (number)=>{
+//         return  number ** power
+//     }
+// }
+
+// making short 
+
+const myFun = power => number =>  number ** power
+
+
+const cube = myFun(2)
+const ans = cube(3)
+
+console.log(ans)
+
+const square = myFun(3)
+const ans2 = square(3)
+
+console.log(ans2)
