@@ -9,8 +9,9 @@ console.log("script start")
 allButtons.forEach((button)=>{
 button.addEventListener("click", (e)=>{
 let count = 0;
-for(let i = 0; i <1000000000; i++){
-    count = count + 1;
+for(let i = 0; i <=1000000000; i++){
+    // count = count + 1;
+     count = count + i;
 }
 console.log(e.currentTarget.textContent, count)
 })
