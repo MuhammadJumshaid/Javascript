@@ -1,5 +1,6 @@
 // 20260124 
-
+// 20260125
+// 20260126
 // callbacks in asyn programming 
 // callback hell
 // pyramide of dome
@@ -144,36 +145,47 @@ const heading10 = document.querySelector(".heading10")
 // pyramid of dom
 
 
-function changeTextColor(element, text, color, time, onSuccessCallback, onFailureCallback){
+
+
+
+function channgeColorText(element,text,color,time, onSuccessCallback, onFailureCallback){
     setTimeout(()=>{
         if(element){
-        element.textContent = text;
+        
+        element.textContent = text
         element.style.color = color
-        if(onSuccessCallback){
-            onSuccessCallback()
+         if(onSuccessCallback){
+        onSuccessCallback()
+    }
+        }else if (onFailureCallback){
+            onFailureCallback()
+           //  console.log("your element does not exist")
         }
-}else{
-    // console.log("your element does not exist")
-    onFailureCallback()
-}
-    },time)
-    
+    }, time)
 }
 
-changeTextColor(heading1, "one", "red", 1000, ()=>{
-    changeTextColor(heading2,"two", "blue", 2000 ),
-    ()=>{console.log("heading2 does not exist")}
-},
-   ()=>{console.log("heading1 does not exist")})
-
-
-
-
-
-
-
-
-
+channgeColorText(heading1,"one","violet",1000, ()=>{
+    channgeColorText(heading2,"two","red",1000, ()=>{
+        channgeColorText(heading3,"three","green",1000, ()=>{
+            channgeColorText(heading4,"four","blue",1000, ()=>{
+                channgeColorText(heading5,"five","orange",1000, ()=>{
+                    channgeColorText(heading6,"six","black",1000, ()=>{
+                        channgeColorText(heading7,"seven","yellow",1000, ()=>{
+                            channgeColorText(heading8,"eight","grey",1000, ()=>{
+                                channgeColorText(heading9,"nine","pink",1000, ()=>{
+                                    channgeColorText(heading10,"ten","purple",1000, ()=>{
+                                        channgeColorText(heading0,"eleven","skyblue",1000, ()=>{
+                                        },()=>{console.log("heading0 does not exist")})
+                                    },()=>{console.log("heading10 does not exist")})
+                                },()=>{console.log("heading9 does not exist")})
+                            },()=>{console.log("heading8 does not exist")})
+                        },()=>{console.log("heading7 does not exist")})
+                    },()=>{console.log("heading6 does not exist")})
+                },()=>{console.log("heading5 does not exist")})
+            },()=>{console.log("heading4 does not exist")})
+        },()=>{console.log("heading3 does not exist")})
+    },()=>{console.log("heading2 does not exist")})
+},()=>{console.log("heading1 does not exist")})
 
 
 
