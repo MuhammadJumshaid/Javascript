@@ -284,6 +284,7 @@
         'Content-type' : 'application/json'
     },
  })
+ 
 .then((res)=>{
     if(res.ok){
     console.log("inside then")
