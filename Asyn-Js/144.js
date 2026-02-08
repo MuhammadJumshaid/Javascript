@@ -50,3 +50,7 @@
       console.log("inside catch")
       console.log(err)  
    })
+
+
+   console.log("checking")
+   console.log([])
